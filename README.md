@@ -668,7 +668,7 @@ Project ini dilisensikan di bawah [MIT License](https://opensource.org/licenses/
 
 **PT NBC Indonesia**
 
--   **Email**: adammiftah196@gmail.com
+-   **Email**: hrdianto12@gmail.com
 -   **Website**: [https://nbc-indonesia.com](https://nbc-indonesia.com)
 
 ---
