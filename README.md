@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/assets/img/logo-nbc.png" width="200" alt="NBC Indonesia Logo">
+  <img src="https://media.licdn.com/dms/image/v2/D4D3DAQGKIzIC21Uwkg/image-scale_191_1128/image-scale_191_1128/0/1707803960664/pt_nbc_indonesia_cover?e=2147483647&v=beta&t=S3wI4c7SjHdy_uXiXfbJ6sMfI5se4I840WH2doBurSI" width="200" alt="NBC Indonesia Logo">
 </p>
 
 <h1 align="center">🏭 Sistem Inventori & Produksi Tekstil</h1>
@@ -266,8 +266,8 @@ Setiap transaksi penjualan akan berdampak langsung pada laporan keuangan dan sto
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-repo/gudang2.git
-cd gudang2
+git clone https://github.com/hardihardi/Inventory-NBC-Indonesia
+cd Inventory-NBC-Indonesia
 ```
 
 ### 2. Install Dependencies
