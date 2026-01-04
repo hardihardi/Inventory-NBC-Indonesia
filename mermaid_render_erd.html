@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body { background: white; padding: 50px; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        #render-container { background: white; border: 1px solid #eee; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <div id="render-container">
+        <div class="mermaid">
+        erDiagram
+            USER ||--o{ SALE : manages
+            USER ||--o{ PEMBELIAN : processes
+            USER ||--o{ PRODUCTION : plans
+            USER ||--o{ STOCK_ADJUSTMENT : inputs
+            USER ||--o{ ACTIVITY_LOG : performs
+
+            CATEGORY ||--o{ ITEM : classifies
+            UNIT ||--o{ ITEM : defines
+            COLOR ||--o{ ITEM : variations
+
+            ITEM ||--o{ WAREHOUSE_STOCK : stored_in
+            ITEM ||--o{ SALE_ITEM : sold_as
+            ITEM ||--o{ PEMBELIAN_ITEM : purchased_as
+            ITEM ||--o{ PRODUCTION_MATERIAL : used_as
+            ITEM ||--o{ STOCK_LEDGER : recorded_in
+
+            WAREHOUSE ||--o{ WAREHOUSE_STOCK : contains
+            WAREHOUSE ||--o{ STOCK_TRANSFER : from_to
+            WAREHOUSE ||--o{ STOCK_LEDGER : location
+
+            SALE ||--o{ SALE_ITEM : includes
+            SALE ||--o{ SALE_RETURN : can_be_returned
+            SALE ||--o{ CASH_FLOW : generates_income
+            CUSTOMER ||--o{ SALE : buys
+
+            PEMBELIAN ||--o{ PEMBELIAN_ITEM : includes
+            PEMBELIAN ||--o{ RETUR_PEMBELIAN : can_be_returned
+            SUPPLIER ||--o{ PEMBELIAN : supplies
+
+            PRODUCTION ||--o{ PRODUCTION_MATERIAL : consumes
+            PRODUCTION ||--o{ ITEM : produces_finished_good
+
+            EXPENSE_CATEGORY ||--o{ EXPENSE : categorizes
+            EXPENSE ||--o{ CASH_FLOW : generates_outcome
+        </div>
+    </div>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+</body>
+</html>

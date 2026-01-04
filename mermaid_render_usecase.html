@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body { background: white; padding: 50px; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        #render-container { background: white; border: 1px solid #eee; padding: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <div id="render-container">
+        <div class="mermaid">
+        graph LR
+            subgraph Actors
+                Admin((Administrator))
+                K_Gudang((Kepala Gudang))
+                S_Gudang((Staff Gudang))
+                PPIC((PPIC / Produksi))
+                Fin((Finance))
+                Mgr((Manajer))
+            end
+
+            subgraph "Sistem Inventory NBC"
+                UC_Admin([Setup User & RBAC])
+                UC_Master([Kelola Master Data])
+                UC_Approve([Approval Stok & Mutasi])
+                UC_Scan([Pindaian QR & Audit Fisik])
+                UC_Prod_Plan([Perencanaan Produksi])
+                UC_Prod_Update([Input Progress Produksi])
+                UC_Trans([Transaksi Jual-Beli])
+                UC_Fin([Proses Pembayaran & Finance])
+                UC_Report([Lihat Laporan & Analitik])
+            end
+
+            Admin --- UC_Admin
+            Admin --- UC_Master
+            Admin --- UC_Report
+
+            K_Gudang --- UC_Master
+            K_Gudang --- UC_Approve
+            K_Gudang --- UC_Report
+
+            S_Gudang --- UC_Scan
+            S_Gudang --- UC_Prod_Update
+            S_Gudang --- UC_Trans
+
+            PPIC --- UC_Prod_Plan
+            PPIC --- UC_Prod_Update
+            PPIC --- UC_Master
+
+            Fin --- UC_Fin
+            Fin --- UC_Report
+            Fin --- UC_Trans
+
+            Mgr --- UC_Report
+        </div>
+    </div>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+</body>
+</html>
