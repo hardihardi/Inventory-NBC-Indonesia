@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
         // Share company profile globally
         View::share('company', CompanySetting::firstOrCreate(
             ['id' => 1],
-            ['name' => 'TB. SOGOL ANUGRAH MANDIRI']
+            ['name' => 'NBC Indonesia']
         ));
 
         // Notification View Composer
