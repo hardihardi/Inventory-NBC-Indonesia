@@ -310,7 +310,7 @@
           <img src="{{ $company->logo ? asset('storage/' . $company->logo) : asset('images/newstruk.png') }}" alt="Logo {{ $company->name }}" width="100%" height="100%" style="object-fit: contain;">
         </div>
         <h2 class="text-uppercase">{{ $company->name }}</h2>
-        <p class="small">Sistem Informasi Inventory Produk Tekstil</p>
+        <p class="small">Inventory & Production System</p>
       </div>
       <div class="login-body">
         <!-- Pesan Error -->
