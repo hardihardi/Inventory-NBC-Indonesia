@@ -8,13 +8,6 @@
   <strong>PT NBC Indonesia - Enterprise Resource Planning untuk Manufaktur Tekstil</strong>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
-  <img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-  <img src="https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-</p>
-
 ---
 
 ## 📋 Daftar Isi
@@ -210,7 +203,7 @@ Setiap transaksi penjualan akan berdampak langsung pada laporan keuangan dan sto
 | Teknologi      | Versi | Deskripsi          |
 | -------------- | ----- | ------------------ |
 | **Blade**      | -     | Templating Engine  |
-| **Bootstrap**  | 5.3   | CSS Framework      |
+| **Tailwind CSS**  | 5.3   | CSS Framework      |
 | **jQuery**     | 3.x   | JavaScript Library |
 | **Chart.js**   | 4.x   | Charts & Graphs    |
 | **Select2**    | 4.x   | Enhanced Select    |
